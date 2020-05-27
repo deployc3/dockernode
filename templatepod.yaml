@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: templatepod
+  name: templatepod
+spec:
+  containers:
+  - image: deploy/dockernode
+    imagePullPolicy: Never   ##IMAGENS LOCAIS
+    name: templatepod
+    resources: {}
+    ports:
+      - containerPort: 3000
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
