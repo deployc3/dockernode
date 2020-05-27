@@ -7,7 +7,7 @@
 
 #kubectl create -f templatepod.yaml
 
-#kubectl expose pod templatepod --port 3000 --NodePort
+#kubectl expose pod templatepod --port 3000 --type NodePort
 
 
 

@@ -7,8 +7,8 @@ metadata:
   name: templatepod
 spec:
   containers:
-  - image: deploy/dockernode
-    imagePullPolicy: Never   ##IMAGENS LOCAIS
+  - image: deployc3/dockernode
+    #imagePullPolicy: Never   ##IMAGENS LOCAIS
     name: templatepod
     resources: {}
     ports:
